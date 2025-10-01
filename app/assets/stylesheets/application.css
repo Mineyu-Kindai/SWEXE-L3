@@ -1,0 +1,24 @@
+.content_box {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fafafa;
+  padding: 16px;
+}
+
+.student_tag {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.student_tag div {
+  margin-bottom: 3px;
+}
+
+.student_tag span {
+  margin-right: 12px;
+}
+
+.title_ {
+  font-size: 30px;
+  font-weight: bold;
+}
