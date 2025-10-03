@@ -22,3 +22,76 @@
   font-size: 30px;
   font-weight: bold;
 }
+
+#page {
+  width: 980px;
+  margin: 0 auto;
+}
+
+h1 {
+    color: #fefeff;
+}
+h2 {
+  background-color: #3a5a40; 
+  border-bottom: dashed 3px #555555;
+  color: #fefeff;
+}
+
+#pageBody {
+  width: 720px; float: left;
+}
+
+#pageSub {
+  width: 220px; float: right;
+}
+
+#pageFooter {
+  border-top: solid 1px #CCCCCC; text-align: center;
+  clear: both;
+}
+
+#header {
+  background-color: #3a5a40;
+}
+
+.img-right { 
+    float: right; 
+    height: 7em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav h1 {
+  padding-left: 10px;  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none; 
+  padding: 8px;
+  background-color: #a2d2ff;
+  color: #03045e
+}
+
+nav li a:hover {
+  background-color: #669bbc;
+  color: white;
+}
+
+body {
+    background-color: #dad7cd;
+}
+

@@ -1,0 +1,13 @@
+<%= form_with model: @student do |f| %>
+  <p><%= f.label :sid, '学籍番号' %></p>
+  <p><%= f.text_field :sid %></p>
+  <p><%= f.label :name, '氏名' %></p>
+  <p><%= f.text_field :name %></p>
+  <p><%= f.label :email, 'メールアドレス' %></p>
+  <p><%= f.text_field :email %></p>
+  <% if f.object.new_record? %>
+    <p><%= f.submit '登録' %> <%= link_to "戻る", root_path %></p>
+  <% else %>
+    <p><%= f.submit '更新' %> <%= link_to "戻る", root_path %></p>
+  <% end %>
+<% end %>

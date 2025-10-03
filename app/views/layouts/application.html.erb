@@ -23,10 +23,21 @@
   </head>
 
   <body>
-    <!--<header>Header</header>-->
-    <!--or-->
-    <!--&lt;%= render "header" %>-->
-    <%= yield %>
-    <!--<footer>Footer</footer>-->
+    <div id="container">
+      <div id="header">
+        <%= render "header" %>
+      </div>
+      <div id="sidebar">
+        <%= render "sidebar" %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div id="footer">
+        <%= render "footer" %>
+      </div>
+    </div>
   </body>
+  
+  
 </html>

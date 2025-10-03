@@ -4,14 +4,20 @@
 <% end %>
 
 <p class=title_>学生情報一覧</p>
-<p><%= link_to '新規追加', '/students/new' %></p>
+<p><%= link_to '新規追加', new_student_path %></p>
+<!--'/students/new'-->
 <% @students.each do |student| %>
   <div class=student_tag>
     <p><div>学籍番号：<%= student.sid %></div></p>
     <p><div>氏名：<%= student.name %></div></p>
     <p><div>メールアドレス：<%= student.email %></div></p>
-    <span><%= link_to '削除', "/students/#{student.id}", data: {turbo_method: :delete} %></span>
-    <span><%= link_to '編集', "/students/#{student.id}/edit" %></span>
+    
+    <!--<span>&lt;%= link_to '削除', "/students/#{student.id}", data: {turbo_method: :delete} %></span>-->
+    <span><%= link_to '削除', student_path(student), data: {turbo_method: :delete} %></span>
+    
+    <!--<span>&lt;%= link_to '編集', "/students/#{student.id}/edit" %></span>-->
+    <span><%= link_to '編集', edit_student_path(student) %></span>
+    
   </div>
 <% end %>
 </div>
