@@ -23,21 +23,20 @@
   </head>
 
   <body>
-    <div id="container">
+    <div id="page">
       <div id="header">
         <%= render "header" %>
       </div>
-      <div id="content">
-        <div id="sidebar">
-        <%= render "sidebar" %>
-        </div>
+      <div id="pageBody">
         <%= yield %>
       </div>
-      <div id="footer">
-        <%= render "footer" %>
+      <div id="pageSub">
+        <%= render "sidebar" %>
       </div>
     </div>
   </body>
-  
+  <div id="pageFooter">
+    <%= render "footer" %>
+  </div>
   
 </html>
