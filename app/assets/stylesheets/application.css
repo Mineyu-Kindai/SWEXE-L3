@@ -42,7 +42,7 @@ h2 {
 }
 
 #pageSub {
-  width: 220px; float: right;
+  width: 280px; float: right;
 }
 
 #pageFooter {
@@ -50,14 +50,10 @@ h2 {
   clear: both;
 }
 
-#header {
+#header h1 {
   background-color: #3a5a40;
 }
 
-.img-right { 
-    float: right; 
-    height: 7em;
-}
 
 ul {
   list-style-type: none;
@@ -65,31 +61,6 @@ ul {
   padding: 0;
 }
 
-nav h1 {
-  padding-left: 10px;  
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-}
-
-nav li a {
-  text-decoration: none; 
-  padding: 8px;
-  background-color: #a2d2ff;
-  color: #03045e
-}
-
-nav li a:hover {
-  background-color: #669bbc;
-  color: white;
-}
 
 body {
     background-color: #dad7cd;

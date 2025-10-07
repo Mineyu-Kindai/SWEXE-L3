@@ -27,10 +27,10 @@
       <div id="header">
         <%= render "header" %>
       </div>
-      <div id="sidebar">
-        <%= render "sidebar" %>
-      </div>
       <div id="content">
+        <div id="sidebar">
+        <%= render "sidebar" %>
+        </div>
         <%= yield %>
       </div>
       <div id="footer">

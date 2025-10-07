@@ -1,21 +1,5 @@
 <div class=content_box>
-<% if @student.errors.present? %>
-<h3>エラーがあります。</h3>
-<ul>
-  <% @student.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-  <% end %>
-</ul>
-<% end %>
+<%= render "error" %>
 <p class=title_>学生情報　新規登録</p>
 <%= render "form" %>
-<!--<%= form_with model: @student do |f| %>-->
-<!--  <p><%= f.label :sid, '学籍番号' %></p>-->
-<!--  <p><%= f.text_field :sid %></p>-->
-<!--  <p><%= f.label :name, '氏名' %></p>-->
-<!--  <p><%= f.text_field :name %></p>-->
-<!--  <p><%= f.label :email, 'メールアドレス' %></p>-->
-<!--  <p><%= f.text_field :email %></p>-->
-<!--  <p><%= f.submit '登録' %> <%= link_to "戻る", root_path %></p>-->
-<!--<% end %>-->
 </div>

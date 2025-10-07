@@ -1,0 +1,8 @@
+<% if @student.errors.present? %>
+<h3>エラーがあります。</h3>
+<ul>
+  <% @student.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
